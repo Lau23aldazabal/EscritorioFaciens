@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3DFD0CE-0A49-43F6-B388-C97EF63C85ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EscritorioFaciens</RootNamespace>
+    <AssemblyName>EscritorioFaciens</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Documents.IO.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Shared.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.DataVisualization.Barcode.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.DataVisualization.Shared.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Misc.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Portable.Core.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinFormattedText.WordWriter.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinGanttView.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinRadialMenu.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.v21.2, Version=21.2.20212.46, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Intersoft.Crosslight, Version=6.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.6.0.5000.975\lib\Intersoft.Crosslight.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Abstractions, Version=7.0.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.Abstractions.7.0.5\lib\net462\Microsoft.AspNetCore.DataProtection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http, Version=2.2.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.2.2.2\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=5.0.17.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.5.0.17\lib\net461\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.WebUtilities.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.ObjectPool.2.2.0\lib\netstandard2.0\Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=5.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.5.0.1\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.Headers.2.2.0\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="Uno, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.Diagnostics.Eventing, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.Diagnostics.Eventing.2.0.1\lib\netstandard2.0\Uno.Diagnostics.Eventing.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.Fonts.Fluent, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.Fonts.Fluent.2.0.0\lib\netstandard1.0\Uno.Fonts.Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.Foundation, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.Foundation.Logging, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.Foundation.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.UI, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.UI.Composition, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.UI.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.UI.Dispatching, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.UI.Dispatching.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.UI.FluentTheme, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.UI.FluentTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.UI.FluentTheme.v1, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.UI.FluentTheme.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.UI.FluentTheme.v2, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.UI.FluentTheme.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.UI.Toolkit, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.UI.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.Xaml, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Uno.UI.4.8.39\lib\netstandard2.0\Uno.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\AdjuntoPublicacionDTO.cs" />
+    <Compile Include="DTO\CuentasEstadoDTO.cs" />
+    <Compile Include="DTO\UsuarioAdministradorDTO.cs" />
+    <Compile Include="EncriptarPassword.cs" />
+    <Compile Include="FormsUsuario\ComentarioUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormsUsuario\ComentarioUc.Designer.cs">
+      <DependentUpon>ComentarioUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUsuario\FichaDisenoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUsuario\FichaDisenoFrm.Designer.cs">
+      <DependentUpon>FichaDisenoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUsuario\NovedadesUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUsuario\NovedadesUsuario.Designer.cs">
+      <DependentUpon>NovedadesUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUsuario\PrincipalUsuarioMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUsuario\PrincipalUsuarioMDI.Designer.cs">
+      <DependentUpon>PrincipalUsuarioMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUsuario\Proyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUsuario\Proyectos.Designer.cs">
+      <DependentUpon>Proyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUsuario\NovedadDisenoUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormsUsuario\NovedadDisenoUc.Designer.cs">
+      <DependentUpon>NovedadDisenoUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuncionesGenerales.cs" />
+    <Compile Include="Mantenimiento\CuentaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\CuentaFrm.Designer.cs">
+      <DependentUpon>CuentaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\DisenoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\DisenoFrm.Designer.cs">
+      <DependentUpon>DisenoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\EstiloFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\EstiloFrm.Designer.cs">
+      <DependentUpon>EstiloFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ImagenDisenoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ImagenDisenoFrm.Designer.cs">
+      <DependentUpon>ImagenDisenoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoCuentas.Designer.cs">
+      <DependentUpon>MantenimientoCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoPermisos.Designer.cs">
+      <DependentUpon>MantenimientoPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\PrendaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\PrendaFrm.Designer.cs">
+      <DependentUpon>PrendaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ResultadoAutenticacionDTO.cs" />
+    <Compile Include="DTO\CredencialesUsuarioDTO.cs" />
+    <Compile Include="Entidades\AdjuntoPublicacion.cs" />
+    <Compile Include="Entidades\Comentario.cs" />
+    <Compile Include="Entidades\Diseno.cs" />
+    <Compile Include="Entidades\Estilo.cs" />
+    <Compile Include="Entidades\ImagenDiseno.cs" />
+    <Compile Include="Entidades\Prenda.cs" />
+    <Compile Include="Entidades\Proyecto.cs" />
+    <Compile Include="Entidades\Publicacion.cs" />
+    <Compile Include="Entidades\Tela.cs" />
+    <Compile Include="Entidades\UsuarioSeguidor.cs" />
+    <Compile Include="CuentasUsuario\LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasUsuario\LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoDiseño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoDiseño.Designer.cs">
+      <DependentUpon>MantenimientoDiseño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoEstilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoEstilo.Designer.cs">
+      <DependentUpon>MantenimientoEstilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoPrenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoPrenda.Designer.cs">
+      <DependentUpon>MantenimientoPrenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoTela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\MantenimientoTela.Designer.cs">
+      <DependentUpon>MantenimientoTela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio.cs" />
+    <Compile Include="Mantenimiento\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CuentasUsuario\RegistroFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasUsuario\RegistroFrm.Designer.cs">
+      <DependentUpon>RegistroFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\TelaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\TelaFrm.Designer.cs">
+      <DependentUpon>TelaFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormsUsuario\ComentarioUc.resx">
+      <DependentUpon>ComentarioUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUsuario\FichaDisenoFrm.resx">
+      <DependentUpon>FichaDisenoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUsuario\NovedadDisenoUc.resx">
+      <DependentUpon>NovedadDisenoUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUsuario\NovedadesUsuario.resx">
+      <DependentUpon>NovedadesUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUsuario\PrincipalUsuarioMDI.resx">
+      <DependentUpon>PrincipalUsuarioMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUsuario\Proyectos.resx">
+      <DependentUpon>Proyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\CuentaFrm.resx">
+      <DependentUpon>CuentaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\DisenoFrm.resx">
+      <DependentUpon>DisenoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\EstiloFrm.resx">
+      <DependentUpon>EstiloFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ImagenDisenoFrm.resx">
+      <DependentUpon>ImagenDisenoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\MantenimientoCuentas.resx">
+      <DependentUpon>MantenimientoCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\MantenimientoDiseño.resx">
+      <DependentUpon>MantenimientoDiseño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\MantenimientoEstilo.resx">
+      <DependentUpon>MantenimientoEstilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\MantenimientoPermisos.resx">
+      <DependentUpon>MantenimientoPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\MantenimientoPrenda.resx">
+      <DependentUpon>MantenimientoPrenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\MantenimientoTela.resx">
+      <DependentUpon>MantenimientoTela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\PrendaFrm.resx">
+      <DependentUpon>PrendaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\TelaFrm.resx">
+      <DependentUpon>TelaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasUsuario\LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasUsuario\RegistroFrm.resx">
+      <DependentUpon>RegistroFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Uno.SourceGenerationTasks.4.2.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets" Condition="Exists('..\packages\Uno.SourceGenerationTasks.4.2.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Uno.SourceGenerationTasks.4.2.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Uno.SourceGenerationTasks.4.2.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets'))" />
+  </Target>
+</Project>
